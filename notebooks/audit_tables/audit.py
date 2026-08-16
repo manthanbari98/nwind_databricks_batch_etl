@@ -1,11 +1,13 @@
 #CREATE AUDIT SCHEMA AND TABLE
 
+#Audit Schema
 spark.sql("""
           CREATE SCHEMA IF NOT EXISTS batch_process.audit;
           """)
 
 # COMMAND ----------
 
+#Audit Table
 spark.sql("""
 CREATE TABLE IF NOT EXISTS batch_process.audit.etl_log
 (
